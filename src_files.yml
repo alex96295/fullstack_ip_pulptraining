@@ -1,0 +1,7 @@
+fullstack_ip_pulptraining:
+  incdirs: [
+    ../include,
+  ]
+  files:[
+    ./rtl/wide_alu.sv,
+  ] 
