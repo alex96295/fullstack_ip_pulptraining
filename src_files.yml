@@ -1,7 +1,15 @@
 fullstack_ip_pulptraining:
   incdirs: [
-    ../include,
+    - ./include,
+    - ../register_interface/include,
+    - ../register_interface/vendor/lowrisc_opentitan/include,
+    - ./register-interface
   ]
   files:[
-    ./rtl/wide_alu.sv,
-  ] 
+    - ./rtl/wide_alu.sv,
+    - ./rtl/wide_alu_top
+  ]
+  vlog_opts: [
+    - -L register_interface_lib,
+  ]
+  
